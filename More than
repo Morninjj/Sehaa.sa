@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>الإجازات المرضية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        form {
+            margin: 20px auto;
+            width: 300px;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>الإجازات المرضية</h1>
+    <p>خدمة الاستعلام عن الإجازات المرضية تتيح لك الاستعلام عن حالة طلبك للإجازة.</p>
+    <form>
+        <label for="id">رقم الهوية/الإقامة:</label>
+        <input type="text" id="id" name="id" required>
+        <label for="type">نوع الاستعلام:</label>
+        <select id="type" name="type" required>
+            <option value="driving_license">رخصة القيادة</option>
+            <option value="passport">الجواز</option>
+        </select>
+        <button type="submit">استعلام</button>
+        <button type="reset">رجوع للاستعلامات</button>
+    </form>
+    <p>منصة صحة معتمدة من قبل وزارة الصحة © 2024</p>
+</body>
+</html>
